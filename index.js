@@ -12,9 +12,37 @@
     };
 */
 
+let marvelHero = {
+    fullName: "Peter Parker",
+    codeName: "Spider-Man",
+    age: 25,
+    active: true
+};
+
 /* 
     - Objects are dictionaries
 */
+
+let theSimpsons = {
+    id: 1,
+    est: 1989,
+    genre: 'animated',
+    seasons: {
+        "season one": [
+            {
+                episode_title: 'Simpsons Roasting on an Open Fire',
+                aired: '1989-12-17'
+            },
+            {
+                episode_title: 'Bart the Genius',
+                aired: '1990-01-01'
+            },
+        ],
+        "season two" : [/*... */],
+        "season three" : [/*... */]
+    },
+    currently_running: true
+}
 
 /* 
 !   Dot Notation and Square Brackets
@@ -29,3 +57,17 @@
         - Used primarily to target a multi-word key
     object["key name"]
 */
+
+// console.log(theSimpsons.genre);
+// console.log(theSimpsons["genre"]);
+
+// console.log(theSimpsons.seasons["season one"]);
+
+theSimpsons.characters = [
+    'Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'
+];
+
+// console.log(theSimpsons);
+
+theSimpsons.currently_running = false;
+// console.log(theSimpsons);
